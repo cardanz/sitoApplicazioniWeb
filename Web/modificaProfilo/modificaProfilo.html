@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../main2.css">
+  <link rel="stylesheet" href="./modificaProfilo.css">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="../main2.html" class="active">Home</a>
+    <a href="../posts/posts.html">Tutorial</a>
+    <a href="../coming_soon/coming_soon.html">Dove Siamo</a>
+    <a href="../coming_soon/coming_soon.html">Contatti</a>
+    <div class="dropdown">
+      <button class="dropbtn">Il tuo Profilo
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./modificaProfilo/modificaProfilo.html">Modifica Profilo</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="align-center">
+    <form class="registrazione-form">
+      <span>Nome</span>
+      <input id="firstname" pattern="[A-Za-z]{1,}" title="Inserire solamente caratteri non numerici"/>
+      <span>Cognome</span>
+      <input id="lastname" pattern="[A-Za-z]{1,}" title="Inserire solamente caratteri non numerici"/>
+      <span>Citt&agrave</span>
+      <input id="city" pattern="[A-Za-z]{1,}" title="Inserire solamente caratteri non numerici" />
+      <span>password corrente</span>
+      <input id="oldpassword" type="password" minlength="6" autocomplete="off"
+      title="Deve avere una lunghezza minimo di 6 caratteri" required/>
+      <span>nuova Password</span>
+      <input id="newpassword" type="password" minlength="6" autocomplete="off"
+      title="Deve avere una lunghezza minimo di 6 caratteri" required />
+      <span>Conferma nuova password</span>
+      <input id="conferma" type="password" minlength="6" autocomplete="off"
+      title="Deve avere una lunghezza minimo di 6 caratteri" required/>
+      <div id="confermamsg" style="color:#B00020;display:none">Le password non corrispondono. Riprova</div>
+    </form>
+
+    <button id="changepassword">modifica profilo</button>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../main.js"></script>
+  <script src="./modificaProfilo.js"></script>
+</body>
+
+</html>

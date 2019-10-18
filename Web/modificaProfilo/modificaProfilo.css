@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../images/motore-blur.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+  }
+  
+
+  .topnav{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+  
+  .registrazione-form {
+    width: 400px;
+    min-height: 500px;
+    height: auto;
+    background-color: #eceff1;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 4px;
+    overflow: auto;
+  }
+  
+  .registrazione-form input {
+    margin-bottom: 16px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: 1px solid#eceff1;
+  }
+  
+  .align-center{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .error-message{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+  }

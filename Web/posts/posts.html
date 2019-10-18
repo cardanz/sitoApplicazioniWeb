@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="./posts.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../main2.css">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css">
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="../main2.html" class="active">Home</a>
+    <a href="../posts/posts.html">Tutorial</a>
+    <a href="../coming_soon/coming_soon.html">Dove Siamo</a>
+    <a href="../coming_soon/coming_soon.html">Contatti</a>
+    <a href="javascript:void(0);" class="icon" onclick="comparsaMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="posts-container">
+    <div class="toolbar">
+      <button class="our-button" id="new-post-button"><i class="mdi mdi-plus"></i>Nuovo Post</button>
+      <input id="titles" class="our-input" />
+      <button class="our-button" id="delete">elimina</button>
+      <input type="text" id="search" />
+      <button class="our-button" id="search-engine">Cerca</button>
+    </div>
+
+    <div class="posts-content" id="posts-content">
+
+    </div>
+
+    <div id="new-post-dialog" class="our-dialog">
+      <div class="dialog-content post-dialog">
+        <div class="header">
+          <h1>Inserisci post</h1>
+          <i class="mdi mdi-close" id="new-post-close-button"></i>
+        </div>
+        <div class="content">
+          <label>Titolo</label>
+          <input id="title" class="our-input" />
+          <label>Message</label>
+          <textarea id="message" class="our-textarea" rows="4"></textarea>
+        </div>
+        <div class="actions">
+          <button class="our-button" id="send-new-post-button">Crea Post</button>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+<script src="../main.js"></script>
+<script src="./posts.js"></script>
+<script src="../main2.js"></script>
+</html>
